@@ -19,7 +19,15 @@ def reduce_to_total(source_array, starting_point = 0)
    source_array.reduce(starting_point) { |num, x| num + x }
 end
 
+def reduce_to_all_true(source_array)
+  source_array.all?  
+end
 
+def reduce_to_any_true(source_array)
+  source_array.any?
+end
+
+=begin
 def reduce_to_all_true(source_array)
   i = 0 
   while i < source_array.size do
@@ -41,3 +49,4 @@ def reduce_to_any_true(source_array)
   end
   return false
 end
+=end
